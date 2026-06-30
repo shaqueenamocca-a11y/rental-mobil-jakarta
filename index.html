@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rental Mobil Jakarta | Premium Chauffeur Service</title>
+  <meta name="description" content="Rental mobil Jakarta dengan sopir. Premium, nyaman, dan fleksibel untuk harian, per jam, atau trip luar kota." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#07111d;
+      --bg2:#0c1728;
+      --card:rgba(10,18,33,.76);
+      --text:#eef4ff;
+      --muted:#9aa8bd;
+      --line:rgba(255,255,255,.08);
+      --accent:#22c55e;
+      --accent2:#38bdf8;
+      --gold:#f5c97b;
+      --shadow:0 22px 60px rgba(0,0,0,.38);
+      --radius:24px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(56,189,248,.14), transparent 28%),
+        radial-gradient(circle at top right, rgba(34,197,94,.10), transparent 26%),
+        linear-gradient(180deg, #040814 0%, var(--bg) 100%);
+    }
+    a{text-decoration:none}
+    .navbar-blur{backdrop-filter:blur(16px);background:rgba(5,8,20,.68);border-bottom:1px solid var(--line)}
+    .brand{font-weight:800;color:var(--text)}
+    .brand span{color:var(--accent)}
+    .nav-link{color:var(--muted)!important}
+    .nav-link:hover{color:var(--text)!important}
+    .btn-cta{border:0;border-radius:14px;padding:12px 18px;font-weight:700}
+    .btn-primary-grad{background:linear-gradient(135deg,var(--accent),#16a34a);color:#06110b}
+    .btn-soft{background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--text)}
+    .hero{padding:28px 0 34px}
+    .hero-shell{
+      border:1px solid var(--line);
+      border-radius:32px;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      background:
+        linear-gradient(110deg, rgba(4,8,20,.92) 0%, rgba(4,8,20,.76) 48%, rgba(4,8,20,.36) 100%),
+        url('https://drive.google.com/thumbnail?id=1h9EMbRgydTTsbEhfU9y0JvR-rcnRlI0c&sz=w2500') center/cover;
+    }
+    .hero-inner{min-height:78vh;padding:32px;display:flex;align-items:center}
+    .pill{display:inline-flex;gap:8px;align-items:center;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid var(--line);font-size:13px}
+    .hero-title{font-size:clamp(40px,5vw,68px);line-height:1.02;font-weight:800;letter-spacing:-.03em;margin:18px 0 16px;max-width:11ch}
+    .hero-text{color:#d4ddec;max-width:640px;font-size:18px;line-height:1.8}
+    .meta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+    .meta{padding:10px 14px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid var(--line);font-size:13px}
+    .glass-card,.card-soft{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);backdrop-filter:blur(12px)}
+    .section-pad{padding:28px 0}
+    .section-title{font-size:28px;font-weight:800;letter-spacing:-.02em;margin:0 0 10px}
+    .section-desc{color:var(--muted);line-height:1.7;margin:0 0 20px}
+    .card-soft{height:100%}
+    .icon-badge{width:48px;height:48px;border-radius:16px;display:inline-flex;align-items:center;justify-content:center;background:rgba(56,189,248,.10);border:1px solid rgba(56,189,248,.18);margin-bottom:14px;font-size:20px}
+    .floating-wa{position:fixed;right:18px;bottom:18px;z-index:9999;border-radius:999px;padding:14px 18px;background:linear-gradient(135deg,#25d366,#128c7e);color:#fff;font-weight:700;box-shadow:0 18px 35px rgba(0,0,0,.35);border:0}
+    footer{padding:30px 0 44px;color:var(--muted);font-size:14px}
+    @media (max-width: 991.98px){.hero-inner{min-height:auto;padding:24px}.hero-title{max-width:none}}
+  </style>
+</head>
+<body>
+<header class="navbar-blur sticky-top">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark py-3">
+      <a class="navbar-brand brand" href="index.html">Rental<span>Mobil</span>Jakarta</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="navMenu">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title brand" id="navMenuLabel">Rental<span>Mobil</span>Jakarta</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Layanan</a></li>
+            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Galeri</a></li>
+            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+            <li class="nav-item mt-3 mt-lg-0">
+              <a class="btn btn-cta btn-primary-grad" href="https://wa.me/6283840987113?text=Halo%20saya%20mau%20booking%20rental%20mobil" target="_blank" rel="noopener">Pesan via WhatsApp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-shell">
+        <div class="hero-inner">
+          <div class="row g-4 align-items-center w-100">
+            <div class="col-lg-7">
+              <div class="pill">🚘 Premium Chauffeur Service • Jakarta</div>
+              <h1 class="hero-title">Rental Mobil Jakarta dengan Sopir</h1>
+              <p class="hero-text">Nyaman untuk bisnis, keluarga, antar-jemput, dan trip luar kota. Armada bersih, sopir profesional, booking cepat via WhatsApp.</p>
+              <div class="d-flex flex-wrap gap-2 mt-4">
+                <a class="btn btn-cta btn-primary-grad" href="contact.html">Booking Sekarang</a>
+                <a class="btn btn-cta btn-soft" href="pricing.html">Lihat Harga</a>
+              </div>
+              <div class="meta-row">
+                <div class="meta">Per Jam</div>
+                <div class="meta">Harian</div>
+                <div class="meta">Trip Luar Kota</div>
+                <div class="meta">Sopir Profesional</div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="glass-card p-4">
+                <div class="mb-3">
+                  <div class="text-uppercase small text-info fw-semibold">Armada unggulan</div>
+                  <h2 class="h4 mb-0">Suzuki XL7 Manual Hybrid</h2>
+                </div>
+                <div class="ratio ratio-4x3 rounded-4 overflow-hidden border border-light border-opacity-10 mb-3">
+                  <img src="https://drive.google.com/thumbnail?id=143q7GOCUUsRaIW5ScmY8K76stH6ovhO_&sz=w2000" alt="Suzuki XL7" style="object-fit:cover;width:100%;height:100%;">
+                </div>
+                <p class="mb-0 text-white-50">SUV modern, gagah, dan nyaman untuk keluarga maupun perjalanan kerja.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card-soft p-4">
+            <div class="icon-badge">🕒</div>
+            <h3 class="h5">Booking Fleksibel</h3>
+            <p class="mb-0 text-white-50">Bisa pilih per jam, harian, atau trip sesuai kebutuhan.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-soft p-4">
+            <div class="icon-badge">👨‍✈️</div>
+            <h3 class="h5">Sopir Profesional</h3>
+            <p class="mb-0 text-white-50">Ramah, komunikatif, dan siap bantu perjalanan lebih nyaman.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-soft p-4">
+            <div class="icon-badge">✅</div>
+            <h3 class="h5">Proses Simpel</h3>
+            <p class="mb-0 text-white-50">Dari lihat paket sampai booking, semuanya dibuat cepat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<a class="floating-wa" href="https://wa.me/6283840987113?text=Halo%20saya%20mau%20booking%20rental%20mobil" target="_blank" rel="noopener">WhatsApp</a>
+
+<footer>
+  <div class="container">© 2026 Rental Mobil Jakarta. Semua hak dilindungi.</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
