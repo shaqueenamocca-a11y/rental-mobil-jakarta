@@ -64,12 +64,19 @@
       display:inline-flex;
       align-items:center;
       justify-content:center;
+      width:100%;
     }
     .btn-primary-grad{
       background:linear-gradient(135deg,var(--accent),#16a34a);
       color:#06110b;
       box-shadow:0 12px 28px rgba(34,197,94,.18);
     }
+    .btn-soft{
+      background:rgba(255,255,255,.05);
+      border:1px solid var(--line);
+      color:var(--text);
+    }
+    .btn-soft:hover{background:rgba(255,255,255,.08);color:var(--text)}
 
     .hero{padding:28px 0 34px}
     .hero-shell{
@@ -118,17 +125,13 @@
     }
     .navbar-toggler:focus{box-shadow:none !important}
 
-    .form-control,
-    .form-select{
+    .form-control{
       background-color:#121b2b;
       color:var(--text);
       border:1px solid rgba(255,255,255,.10);
     }
-    .form-control::placeholder{
-      color:#7f8aa3;
-    }
-    .form-control:focus,
-    .form-select:focus{
+    .form-control::placeholder{color:#7f8aa3}
+    .form-control:focus{
       background-color:#121b2b;
       color:var(--text);
       border-color:var(--accent);
@@ -210,23 +213,29 @@
         <div class="col-lg-5">
           <div class="contact-card p-4 p-md-5">
             <h3 class="h4 mb-3">Info Kontak</h3>
+
             <div class="mb-3">
-              <div class="text-white-50 small">WhatsApp</div>
-              <div class="fw-semibold fs-5">+62 838-4098-7113</div>
+              <div class="text-white-50 small mb-2">WhatsApp</div>
+              <a class="btn btn-cta btn-primary-grad"
+                 href="https://wa.me/6283840987113?text=Halo%20saya%20mau%20booking%20rental%20mobil"
+                 target="_blank" rel="noopener">
+                Chat WhatsApp
+              </a>
             </div>
+
             <div class="mb-3">
-              <div class="text-white-50 small">Telepon</div>
-              <div class="fw-semibold fs-5">+62 838-4098-7113</div>
+              <div class="text-white-50 small mb-2">Telepon</div>
+              <a class="btn btn-cta btn-soft"
+                 href="tel:+6283840987113">
+                Hubungi via Telepon
+              </a>
             </div>
-            <div class="mb-4">
+
+            <div class="mb-0">
               <div class="text-white-50 small">Jam Operasional</div>
               <div class="fw-semibold">Setiap hari, siap bantu booking dan konsultasi perjalanan.</div>
+              <div class="text-white-50 mt-2">Respon cepat untuk cek armada, harga, dan ketersediaan jadwal.</div>
             </div>
-            <a class="btn btn-cta btn-primary-grad w-100"
-               href="https://wa.me/6283840987113?text=Halo%20saya%20mau%20booking%20rental%20mobil"
-               target="_blank" rel="noopener">
-              Chat WhatsApp
-            </a>
           </div>
         </div>
 
