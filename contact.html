@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Kontak | Rental Mobil Jakarta</title>
-  <meta name="description" content="Hubungi Rental Mobil Jakarta untuk booking cepat via WhatsApp." />
+  <meta name="description" content="Hubungi Rental Mobil Jakarta untuk booking cepat via WhatsApp atau telepon." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,7 +81,7 @@
       backdrop-filter:blur(12px);
     }
 
-    .box,.contact-card,.form-card{
+    .contact-card,.form-card{
       background:var(--card);
       border:1px solid var(--line);
       border-radius:28px;
@@ -119,19 +119,16 @@
     .navbar-toggler:focus{box-shadow:none !important}
 
     .form-control,
-    .form-select,
-    textarea.form-control{
+    .form-select{
       background-color:#121b2b;
       color:var(--text);
       border:1px solid rgba(255,255,255,.10);
     }
-    .form-control::placeholder,
-    textarea.form-control::placeholder{
+    .form-control::placeholder{
       color:#7f8aa3;
     }
     .form-control:focus,
-    .form-select:focus,
-    textarea.form-control:focus{
+    .form-select:focus{
       background-color:#121b2b;
       color:var(--text);
       border-color:var(--accent);
@@ -202,7 +199,7 @@
     <div class="container">
       <div class="hero-shell p-4 p-md-5">
         <h1 class="display-5 fw-bold mb-3">Kontak Kami</h1>
-        <p class="text-white-50 mb-0">Paling cepat hubungi kami lewat WhatsApp untuk cek ketersediaan armada dan booking.</p>
+        <p class="text-white-50 mb-0">Hubungi kami lewat WhatsApp atau telepon untuk cek ketersediaan armada dan booking.</p>
       </div>
     </div>
   </section>
@@ -218,12 +215,12 @@
               <div class="fw-semibold fs-5">+62 838-4098-7113</div>
             </div>
             <div class="mb-3">
-              <div class="text-white-50 small">Layanan</div>
-              <div class="fw-semibold">Rental mobil dengan sopir, harian, per jam, dan luar kota.</div>
+              <div class="text-white-50 small">Telepon</div>
+              <div class="fw-semibold fs-5">+62 838-4098-7113</div>
             </div>
             <div class="mb-4">
-              <div class="text-white-50 small">Respon</div>
-              <div class="fw-semibold">Biasanya cepat via WhatsApp.</div>
+              <div class="text-white-50 small">Jam Operasional</div>
+              <div class="fw-semibold">Setiap hari, siap bantu booking dan konsultasi perjalanan.</div>
             </div>
             <a class="btn btn-cta btn-primary-grad w-100"
                href="https://wa.me/6283840987113?text=Halo%20saya%20mau%20booking%20rental%20mobil"
@@ -245,6 +242,14 @@
                 <div class="col-md-6">
                   <label for="hp" class="form-label">Nomor HP</label>
                   <input type="tel" class="form-control" id="hp" placeholder="08xxxxxxxxxx">
+                </div>
+                <div class="col-md-6">
+                  <label for="tanggal" class="form-label">Tanggal Booking</label>
+                  <input type="date" class="form-control" id="tanggal">
+                </div>
+                <div class="col-md-6">
+                  <label for="jam" class="form-label">Jam Booking</label>
+                  <input type="time" class="form-control" id="jam">
                 </div>
                 <div class="col-12">
                   <label for="tujuan" class="form-label">Tujuan / Kebutuhan</label>
